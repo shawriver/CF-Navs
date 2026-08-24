@@ -1,7 +1,7 @@
 {
-  "name": "CF-Navs 导航面板",
-  "short_name": "CF-Navs",
-  "description": "部署在 Cloudflare Workers 上的轻量个人导航面板",
+  "name": "Shaw 的传送门",
+  "short_name": "传送门",
+  "description": "Shaw 的个人导航站",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
