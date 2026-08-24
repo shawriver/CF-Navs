@@ -61,8 +61,10 @@
     margin: 0;
     padding: 0.75rem 1rem;
     border-radius: 1.5rem;
-    border: 1px solid rgba(148, 163, 184, 0.18);
-    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(12px) saturate(130%);
+    -webkit-backdrop-filter: blur(12px) saturate(130%);
   }
 
   :global([data-theme='dark']) .search-card {

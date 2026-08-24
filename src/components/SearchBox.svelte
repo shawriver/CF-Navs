@@ -239,9 +239,11 @@
   .engine-icon-button {
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(148, 163, 184, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.75rem;
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(12px) saturate(130%);
+    -webkit-backdrop-filter: blur(12px) saturate(130%);
     color: inherit;
     cursor: pointer;
     display: grid;

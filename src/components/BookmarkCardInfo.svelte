@@ -76,13 +76,11 @@
     box-sizing: border-box;
     text-decoration: none;
     color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    background: rgb(var(--card-bg-rgb, 255 255 255) / calc(var(--card-bg-opacity, 0.9) * 0.62));
-    backdrop-filter: blur(14px) saturate(140%);
-    -webkit-backdrop-filter: blur(14px) saturate(140%);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.32),
-      0 2px 10px rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgb(var(--card-bg-rgb, 255 255 255) / calc(var(--card-bg-opacity, 0.9) * 0.34));
+    backdrop-filter: blur(10px) saturate(130%);
+    -webkit-backdrop-filter: blur(10px) saturate(130%);
+    box-shadow: none;
     transition:
       transform var(--transition-fast),
       border-color var(--transition-fast);
@@ -110,10 +108,8 @@
   }
 
   .bookmark-card-info:hover {
-    border-color: rgba(255, 255, 255, 0.45);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.65),
-      0 8px 20px rgba(15, 23, 42, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgb(var(--card-bg-rgb, 255 255 255) / calc(var(--card-bg-opacity, 0.9) * 0.52));
     transform: translateY(-1px);
   }
 
@@ -134,7 +130,7 @@
     margin: 0;
     line-height: 1.2;
     color: var(--card-title-color, var(--card-text-color, #0f172a));
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.55);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -164,12 +160,10 @@
   }
 
   :global([data-theme='dark']) .bookmark-card-info {
-    border-color: rgba(255, 255, 255, 0.1);
-    background: rgb(15 23 42 / calc(var(--card-bg-opacity, 0.15) * 0.62));
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgb(15 23 42 / calc(var(--card-bg-opacity, 0.15) * 0.38));
     color: var(--card-text-color, #e2e8f0);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.08),
-      0 2px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: none;
   }
 
   :global([data-theme='dark']) .bookmark-card-info:hover {

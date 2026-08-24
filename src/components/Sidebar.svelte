@@ -604,27 +604,27 @@
   .toc-mobile-btn,
   .toc-sidebar,
   .top-navigation {
-    --toc-surface: rgb(var(--card-bg-rgb, 255 255 255) / calc(var(--card-bg-opacity, 0.9) * 0.82));
-    --toc-surface-strong: rgb(var(--card-bg-rgb, 255 255 255) / calc(var(--card-bg-opacity, 0.9) * 0.94));
-    --toc-item-bg: rgba(255, 255, 255, 0.58);
-    --toc-item-hover-bg: rgba(239, 246, 255, 0.82);
-    --toc-item-border: rgba(148, 163, 184, 0.24);
-    --toc-border: rgba(255, 255, 255, 0.48);
+    --toc-surface: rgb(var(--card-bg-rgb, 255 255 255) / calc(var(--card-bg-opacity, 0.9) * 0.3));
+    --toc-surface-strong: rgb(var(--card-bg-rgb, 255 255 255) / calc(var(--card-bg-opacity, 0.9) * 0.42));
+    --toc-item-bg: transparent;
+    --toc-item-hover-bg: rgba(255, 255, 255, 0.3);
+    --toc-item-border: transparent;
+    --toc-border: rgba(255, 255, 255, 0.22);
     --toc-text: var(--home-text-color, #0f172a);
     --toc-accent: var(--home-accent-color, #2563eb);
-    --toc-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+    --toc-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
     --toc-slip: rgba(15, 23, 42, 0.72);
   }
 
   :global([data-theme='dark']) .toc-mobile-btn,
   :global([data-theme='dark']) .toc-sidebar,
   :global([data-theme='dark']) .top-navigation {
-    --toc-surface: rgba(15, 23, 42, 0.82);
-    --toc-surface-strong: rgba(15, 23, 42, 0.94);
-    --toc-item-bg: rgba(30, 41, 59, 0.58);
-    --toc-item-hover-bg: rgba(51, 65, 85, 0.78);
-    --toc-item-border: rgba(148, 163, 184, 0.18);
-    --toc-border: rgba(148, 163, 184, 0.2);
+    --toc-surface: rgba(15, 23, 42, 0.34);
+    --toc-surface-strong: rgba(15, 23, 42, 0.46);
+    --toc-item-bg: transparent;
+    --toc-item-hover-bg: rgba(148, 163, 184, 0.2);
+    --toc-item-border: transparent;
+    --toc-border: rgba(148, 163, 184, 0.16);
     --toc-text: var(--home-text-color, #e5eefb);
     --toc-accent: var(--home-accent-color, #7dd3fc);
     --toc-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);

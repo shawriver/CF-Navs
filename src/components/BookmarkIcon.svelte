@@ -52,18 +52,14 @@
     min-width: 0;
     max-width: 100%;
     aspect-ratio: 1 / 1;
-    border: 1px solid rgba(148, 163, 184, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: var(--bookmark-icon-radius, 12px);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 250, 252, 0.62)),
-      rgba(255, 255, 255, 0.52);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.5),
-      0 1px 4px rgba(15, 23, 42, 0.06);
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: none;
   }
 
   .bookmark-icon.has-custom-background {
@@ -94,13 +90,9 @@
   }
 
   :global([data-theme='dark']) .bookmark-icon {
-    border-color: rgba(148, 163, 184, 0.16);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(15, 23, 42, 0.2)),
-      rgba(255, 255, 255, 0.08);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.08),
-      0 2px 8px rgba(0, 0, 0, 0.14);
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
   }
 
   :global([data-theme='dark']) .bookmark-icon .icon-text {

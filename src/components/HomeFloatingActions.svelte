@@ -143,7 +143,7 @@
     bottom: max(1.25rem, env(safe-area-inset-bottom));
     z-index: 50;
     color: #2563eb;
-    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.14);
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1);
   }
 
   .back-to-top-button svg {
@@ -159,9 +159,11 @@
   .icon-button {
     width: 2.5rem;
     height: 2.5rem;
-    border: 1px solid rgba(148, 163, 184, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.24);
     border-radius: 0.75rem;
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
     font-size: 1.15rem;
     line-height: 1;
     cursor: pointer;
@@ -173,8 +175,8 @@
   }
 
   .icon-button:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.95);
-    border-color: rgba(37, 99, 235, 0.45);
+    background: rgba(255, 255, 255, 0.45);
+    border-color: rgba(37, 99, 235, 0.4);
     transform: translateY(-1px);
   }
 
@@ -184,7 +186,7 @@
   }
 
   .theme-toggle-button.is-dark {
-    background: rgba(15, 23, 42, 0.82);
+    background: rgba(15, 23, 42, 0.36);
     color: #e5eefb;
   }
 
@@ -208,13 +210,13 @@
   }
 
   :global([data-theme='dark']) .icon-button {
-    background: rgba(15, 23, 42, 0.7);
-    border-color: rgba(148, 163, 184, 0.32);
+    background: rgba(15, 23, 42, 0.34);
+    border-color: rgba(148, 163, 184, 0.24);
     color: #e5eefb;
   }
 
   :global([data-theme='dark']) .icon-button:hover:not(:disabled) {
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(15, 23, 42, 0.48);
   }
 
   :global([data-theme='dark']) .back-to-top-button {
