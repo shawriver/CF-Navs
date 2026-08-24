@@ -14,6 +14,7 @@ import installRoutes from './routes/install'
 import { iconRoutes } from './routes/icon'
 import publicRoutes from './routes/public'
 import settingsRoutes from './routes/settings'
+import widgetRoutes from './routes/widgets'
 import type { HonoEnv } from './types'
 
 const app = new Hono<HonoEnv>()
@@ -24,6 +25,10 @@ app.route('/api', authRoutes)
 app.route('/api', installRoutes)
 app.route('/api', publicRoutes)
 app.route('/api', errorReportRoutes) // 公开错误上报，无需认证
+
+// 首页小组件数据源（公开）。CSP 是 connect-src 'self'，自定义 JS 只能打同源接口，
+// 所以论坛热点必须由 Worker 代理。
+app.route('/api', widgetRoutes)
 
 app.use('/api/admin', authRequired)
 app.use('/api/admin/*', authRequired)
